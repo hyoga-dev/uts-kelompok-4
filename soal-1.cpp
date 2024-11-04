@@ -2,12 +2,9 @@
 using namespace std;
 
 int hitungGaji(int gol, int jamKerja) {
-    int uangLembur = 0;
-    int perJam;
+    int uangLembur = 0, perJam;
 
-    if (jamKerja > 48) {
-        uangLembur = (jamKerja - 48) * 10;
-    }
+    if (jamKerja > 48) uangLembur = (jamKerja - 48) * 10;
     
     switch (gol) {
         case 1: perJam = 25; break; 
@@ -20,8 +17,7 @@ int hitungGaji(int gol, int jamKerja) {
 }
 
 int main() {
-    string nama;
-    int gol, jamKerja;
+    string nama; int gol, jamKerja;
 
     cout << "Masukkan nama anda : "; cin >> nama;
     cout << "Masukkan golongan anda : "; cin >> gol;
@@ -32,6 +28,7 @@ int main() {
         cout << "Error: nilai golongan tidak boleh kurang dari 1 dan tidak boleh lebih dari 3";
         return 0;
     }
+    
     cout << "Total gaji " << nama << " per minggu : ";
     cout << "Rp. " << hitungGaji(gol, jamKerja) << "000";
 }
