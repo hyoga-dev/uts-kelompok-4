@@ -25,5 +25,6 @@ int main() {
 	cout << "Masukkan nilai mobil : "; cin >> mobil;
 	cout << "Input jam masuk (format 24 jam) : "; cin >> masuk;
 	cout << "Input jam keluar (format 24 jam) : "; cin >> keluar;
+	
 	biayaParkir(motor, mobil, masuk, keluar);
 }
