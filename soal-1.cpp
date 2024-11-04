@@ -13,8 +13,7 @@ int main() {
         case 1: perJam = 25; break; 
         case 2: perJam = 35; break;
         case 3: perJam = 50; break;
-    }
-    total = jamKerja * perJam + uangLembur;
+    } total = jamKerja * perJam + uangLembur;
     
     cout << "\nTotal gaji " << nama << " per minggu : ";
     cout << "Rp. " << total << "000";
