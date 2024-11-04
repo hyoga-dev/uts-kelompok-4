@@ -8,8 +8,7 @@ void biayaParkir(int jumlahMotor, int jumlahMobil, int jamMasuk, int jamKeluar) 
 	
 	int total = (jumlahMotor * motor * jam) + (jumlahMobil * mobil * jam);
 
-	cout << "\nTotal biaya parkir : " << total;
-	cout << " (" << jam << " jam)";
+	cout << "\nTotal biaya parkir : " << total << " (" << jam << " jam)";
 }
 
 int main() {
