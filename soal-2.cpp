@@ -2,15 +2,9 @@
 using namespace std;
 
 void biayaParkir(int jumlahMotor, int jumlahMobil, int jamMasuk, int jamKeluar) {
-	int mobil = 5000;
-	int motor = 2000;
-	int jam;
+	int mobil = 5000, motor = 2000, jam;
 
-	if (jamMasuk < jamKeluar) {
-		jam = jamKeluar - jamMasuk;
-	} else {
-		jam = 24 - (jamMasuk - jamKeluar);
-	}
+	(jamMasuk < jamKeluar) ? jam = jamKeluar - jamMasuk : jam = 24 - (jamMasuk - jamKeluar);
 	
 	int total = (jumlahMotor * motor * jam) + (jumlahMobil * mobil * jam);
 
