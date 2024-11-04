@@ -3,9 +3,7 @@ using namespace std;
 
 void biayaParkir(int jumlahMotor, int jumlahMobil, int jamMasuk, int jamKeluar) {
 	int mobil = 5000, motor = 2000, jam;
-
 	(jamMasuk < jamKeluar) ? jam = jamKeluar - jamMasuk : jam = 24 - (jamMasuk - jamKeluar);
-	
 	int total = (jumlahMotor * motor * jam) + (jumlahMobil * mobil * jam);
 
 	cout << "\nTotal biaya parkir : " << total << " (" << jam << " jam)";
